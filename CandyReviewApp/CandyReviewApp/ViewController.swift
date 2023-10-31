@@ -10,16 +10,22 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var labelOne: UILabel!
     @IBOutlet weak var buttonOne: UIButton!
+    @IBOutlet weak var backgroundImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         labelOne.text = "Tanis Candy Reviews"
         navigationItem.title = "Home"
         buttonOne.text = "Learn More"
+        backgroundImage.image = UIImage(named: "candybackground")
+        
         // Do any additional setup after loading the view.
     }
 
-    @IBOutlet weak var buttonePressed: UIImageView!
- 
 }
+
+func buttonPressed(_ sender: Any) {
+    }
+    
+
 

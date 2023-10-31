@@ -31,9 +31,36 @@
                     <view key="view" contentMode="scaleToFill" id="ovf-OD-61e">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WeC-cq-gFK">
+                                <rect key="frame" x="175" y="138" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j4i-Zn-cEg">
+                                <rect key="frame" x="76" y="200" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9wM-48-Oyt">
+                                <rect key="frame" x="76" y="437" width="240" height="261"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="rsw-hk-G1Q"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="image2" destination="j4i-Zn-cEg" id="iDo-xh-Cga"/>
+                        <outlet property="labelTwo" destination="WeC-cq-gFK" id="Vot-hq-DRO"/>
+                        <outlet property="reviewText" destination="9wM-48-Oyt" id="RaQ-PW-Gwx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IUq-2Y-kzB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -59,12 +86,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNt-KG-upk">
-                                <rect key="frame" x="159" y="512" width="75" height="35"/>
+                                <rect key="frame" x="141" y="512" width="111" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Learn More"/>
                                 <connections>
-                                    <segue destination="wMP-1e-X6E" kind="presentation" id="st4-gC-poK"/>
+                                    <action selector="buttonPressed:" destination="uKP-l6-mn3" eventType="touchUpInside" id="kdf-vA-Pb9"/>
+                                    <segue destination="wMP-1e-X6E" kind="showDetail" id="rwD-Di-vG6"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -73,8 +101,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="FO0-Bw-VoU"/>
                     <connections>
+                        <outlet property="backgroundImage" destination="ETa-32-TUR" id="ggE-4k-nzD"/>
                         <outlet property="buttonOne" destination="yNt-KG-upk" id="FPD-FP-YAO"/>
-                        <outlet property="buttonePressed" destination="ETa-32-TUR" id="GAb-NQ-qZP"/>
                         <outlet property="labelOne" destination="TrP-Y8-lbN" id="ZyU-A9-sIo"/>
                     </connections>
                 </viewController>
@@ -143,7 +171,6 @@
         <!--View Controller-->
         <scene sceneID="chk-wl-0Fx">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wYj-1z-lof" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="r52-LM-HFc" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Vn-Tu-xny">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
@@ -153,6 +180,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="OJ5-ro-0ng"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wYj-1z-lof" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="158.01526717557252" y="491.54929577464793"/>
         </scene>
@@ -213,6 +241,9 @@
     </scenes>
     <resources>
         <image name="house.fill" catalog="system" width="128" height="104"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
