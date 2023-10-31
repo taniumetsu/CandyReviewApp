@@ -1,5 +1,5 @@
 //
-//  secondViewController.swift
+//  thirdViewController.swift
 //  CandyReviewApp
 //
 //  Created by Tani Umetsu on 10/31/23.
@@ -7,16 +7,11 @@
 
 import UIKit
 
-class secondViewController: UIViewController {
-    @IBOutlet weak var protoCell: UITableView!
-    @IBOutlet weak var tableView: UITableView!
-    
+class thirdViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
-var candyList = ["Hersheys", "Kit Kat", "Twix", "Crunch Bars"]
-var candyRatings = ["4 stars", "4 stars", "5 stars", "3.5 stars"]
-        
-        
+
         // Do any additional setup after loading the view.
     }
     

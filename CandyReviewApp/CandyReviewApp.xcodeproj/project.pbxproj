@@ -18,6 +18,7 @@
 		2319D5CD2AF1BF8200653370 /* CandyReviewAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2319D5CC2AF1BF8200653370 /* CandyReviewAppUITestsLaunchTests.swift */; };
 		2319D5DA2AF1C00A00653370 /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2319D5D92AF1C00A00653370 /* secondViewController.swift */; };
 		2319D5DC2AF1C03D00653370 /* zeroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2319D5DB2AF1C03D00653370 /* zeroViewController.swift */; };
+		237B4C1D2AF1CA0C0034B8E3 /* thirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237B4C1C2AF1CA0C0034B8E3 /* thirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		2319D5CC2AF1BF8200653370 /* CandyReviewAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandyReviewAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2319D5D92AF1C00A00653370 /* secondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
 		2319D5DB2AF1C03D00653370 /* zeroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zeroViewController.swift; sourceTree = "<group>"; };
+		237B4C1C2AF1CA0C0034B8E3 /* thirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				2319D5AF2AF1BF8000653370 /* Main.storyboard */,
 				2319D5DB2AF1C03D00653370 /* zeroViewController.swift */,
 				2319D5D92AF1C00A00653370 /* secondViewController.swift */,
+				237B4C1C2AF1CA0C0034B8E3 /* thirdViewController.swift */,
 				2319D5B22AF1BF8200653370 /* Assets.xcassets */,
 				2319D5B42AF1BF8200653370 /* LaunchScreen.storyboard */,
 				2319D5B72AF1BF8200653370 /* Info.plist */,
@@ -266,6 +269,7 @@
 			files = (
 				2319D5DA2AF1C00A00653370 /* secondViewController.swift in Sources */,
 				2319D5AE2AF1BF8000653370 /* ViewController.swift in Sources */,
+				237B4C1D2AF1CA0C0034B8E3 /* thirdViewController.swift in Sources */,
 				2319D5AA2AF1BF8000653370 /* AppDelegate.swift in Sources */,
 				2319D5DC2AF1C03D00653370 /* zeroViewController.swift in Sources */,
 				2319D5AC2AF1BF8000653370 /* SceneDelegate.swift in Sources */,

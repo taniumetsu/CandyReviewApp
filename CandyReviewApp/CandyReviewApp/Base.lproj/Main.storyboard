@@ -15,10 +15,35 @@
                     <view key="view" contentMode="scaleToFill" id="apB-zx-R7s">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="AZ3-qC-S8M">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="pRq-wc-gBf">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pRq-wc-gBf" id="sf6-ca-8WE">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="dho-K9-QWa" id="mXm-nO-FFn"/>
+                                    <outlet property="delegate" destination="dho-K9-QWa" id="peT-LL-aSw"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="f0T-CM-pWB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="L5Q-Ji-Epw"/>
+                    <connections>
+                        <outlet property="protoCell" destination="AZ3-qC-S8M" id="Vnj-88-N9X"/>
+                        <outlet property="tableView" destination="AZ3-qC-S8M" id="SlJ-tB-98E"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vsc-fE-HKU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -149,11 +174,11 @@
             </objects>
             <point key="canvasLocation" x="-663.35877862595419" y="-887.32394366197184"/>
         </scene>
-        <!--Item 2-->
+        <!--Chocolates-->
         <scene sceneID="IcR-Zs-DIE">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fa7-UH-64j" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="3R5-vQ-4EN"/>
+                    <tabBarItem key="tabBarItem" title="Chocolates" image="heart.fill" catalog="system" id="3R5-vQ-4EN"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Lzm-0E-gUS">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -168,10 +193,10 @@
             </objects>
             <point key="canvasLocation" x="-663.35877862595419" y="-210.56338028169014"/>
         </scene>
-        <!--View Controller-->
+        <!--Third View Controller-->
         <scene sceneID="chk-wl-0Fx">
             <objects>
-                <viewController id="r52-LM-HFc" sceneMemberID="viewController">
+                <viewController id="r52-LM-HFc" customClass="thirdViewController" customModule="CandyReviewApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Vn-Tu-xny">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -240,6 +265,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="heart.fill" catalog="system" width="128" height="107"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
